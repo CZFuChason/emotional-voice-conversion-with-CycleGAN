@@ -1,5 +1,4 @@
-# Emotional Voice Conversion and/or Speaker Identity Conversion with Non-Parallel Training Data
-
+# Emotional Voice Conversion by using CycleGAN
 
 Dependencies
 -------
