@@ -1,17 +1,5 @@
 # Emotional Voice Conversion and/or Speaker Identity Conversion with Non-Parallel Training Data
 
-**This is an implementation of our Cycle-GAN based emotional voice conversion framework (to be appear in Speaker Odyssey 2020) that converts both spectrum and prosody features. Please kindly cite our paper if you are using our codes:**
- 
-*Kun  Zhou,  Berrak  Sisman,  and  Haizhou  Li,“Transforming spectrum and prosody for emotional voice conversion with non-parallel training data,” arXiv preprint arXiv:2002.00198, 2020*
-
-**Bibtex:**
-```
-@article{zhou2020transforming, 
-  title={Transforming Spectrum and Prosody for Emotional Voice Conversion with Non-Parallel Training Data},
-  author={Zhou, Kun and Sisman, Berrak and Li, Haizhou},
-  journal={arXiv preprint arXiv:2002.00198},
-  year={2020}
-}
 
 ```
 Dependencies
@@ -74,10 +62,5 @@ $ python train_f0.py --train_A_dir './data/training/NEUTRAL(PATH TO SOURCE TRAIN
 $ python convert_separate.py --model_f0_dir './model/neutral_to_surprise_f0' --model_f0_name 'neutral_to_surprise_f0.ckpt' --model_mceps_dir './model/neutral_to_surprise_mceps' --model_mceps_name 'neutral_to_surprise_mceps.ckpt' --data_dir './data/evaluation_all/NEUTRAL(PATH TO EVALUATION DATA)' --conversion_direction 'A2B' --output_dir './converted_voices_neutral_to_surprise_separate'
 ```
 
-
-**Note1:** 
 The codes are based on CycleGAN Voice Conversion: https://github.com/leimao/Voice_Converter_CycleGAN
-
-**Note2:** 
-The codes can easily be used for traditional parallel data free voice conversion (speaker identity conversion). You just need to change the training data to VCC2016 or VCC2018 (both publicly available) and the run the scripts. You can perform spectrum and CWT-based F0 conversion. 
 
